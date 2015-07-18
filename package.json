@@ -1,0 +1,29 @@
+{
+  "name": "flatmarket-server",
+  "description": "A standalone web server for flatmarket.",
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/christophercliff/flatmarket-server"
+  },
+  "main": "./lib/",
+  "scripts": {
+    "style": "./node_modules/crispy/node_modules/.bin/eslint -c ./node_modules/crispy/.eslintrc ./lib/ ./test/",
+    "test": "npm run style && ./node_modules/.bin/mocha --reporter spec --grep ''"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "hapi": "^8.8.0",
+    "hapi-flatmarket": "0.0.0",
+    "joi": "^6.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "crispy": "^4.0.0",
+    "mocha": "^2.2.5"
+  }
+}
