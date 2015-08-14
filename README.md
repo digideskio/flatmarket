@@ -1,10 +1,13 @@
-[![Build Status](https://travis-ci.org/christophercliff/hapi-flatmarket.png?branch=master)](https://travis-ci.org/christophercliff/hapi-flatmarket)
+Made possible By [JSON Expert](https://json.expert/), the easiest way to create a web-ready API.
+
+---
 
 # hapi-flatmarket
 
-> ***[flatmarket](https://github.com/christophercliff/flatmarket)*** is a free and secure e-commerce platform for static websites.<br />By [JSON Expert](https://json.expert/).
+[![Build Status](https://circleci.com/gh/christophercliff/hapi-flatmarket.svg?style=shield)](https://circleci.com/gh/christophercliff/hapi-flatmarket)
+[![codecov.io](http://codecov.io/github/christophercliff/hapi-flatmarket/coverage.svg?branch=master)](http://codecov.io/github/christophercliff/hapi-flatmarket?branch=master)
 
-A [hapi](http://hapijs.com/) plugin for flatmarket.
+A [hapi](http://hapijs.com/) plugin for [flatmarket](https://json.expert/flatmarket/).
 
 ## Installation
 
