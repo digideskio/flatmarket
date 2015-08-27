@@ -1,0 +1,18 @@
+{
+  "name": "flatmarket-example",
+  "description": "An example Flatmarket website.",
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/christophercliff/flatmarket-example"
+  },
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "flatmarket": "^1.0.5",
+    "lodash": "^3.10.1"
+  }
+}
