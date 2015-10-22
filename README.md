@@ -19,7 +19,7 @@ Then start the local server in development mode:
 ```sh
 $ ./node_modules/.bin/flatmarket build \
     --component ./lib/index.jsx \
-    --stripe-secret-key your_secret_key |
+    --stripe-secret-key your_secret_key \
     --dev
 ```
 
