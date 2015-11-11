@@ -17,9 +17,9 @@ $ npm install
 Then start the local server in development mode:
 
 ```sh
-$ ./node_modules/.bin/flatmarket build \
+$ ./node_modules/.bin/flatmarket \
     --component ./lib/index.jsx \
-    --stripe-secret-key your_secret_key \
+    --stripe-secret-key YOUR_TEST_SECRET_KEY \
     --dev
 ```
 
