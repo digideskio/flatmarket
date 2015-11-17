@@ -1,6 +1,6 @@
 {
   "name": "hapi-flatmarket",
-  "description": "A hapi plugin for flatmarket.",
+  "description": "A hapi plugin for Flatmarket.",
   "version": "1.0.0",
   "engines": {
     "node": "0.10.x || 4.x"
@@ -14,7 +14,7 @@
   "scripts": {
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
     "style": "./node_modules/crispy/node_modules/.bin/eslint -c ./node_modules/crispy/.eslintrc ./lib/ ./test/",
-    "test": "./node_modules/.bin/mocha --reporter spec --grep 'return 200 if charge success'"
+    "test": "./node_modules/.bin/mocha --reporter spec --grep ''"
   },
   "dependencies": {
     "bluebird": "^2.9.30",
