@@ -20,7 +20,7 @@
   "dependencies": {
     "bluebird": "^2.9.34",
     "hapi": "^8.8.0",
-    "hapi-flatmarket": "^1.0.0",
+    "hapi-flatmarket": "^1.1.0",
     "joi": "^6.5.0"
   },
   "devDependencies": {
