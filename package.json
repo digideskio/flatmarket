@@ -1,7 +1,7 @@
 {
   "name": "hapi-flatmarket",
   "description": "A hapi plugin for Flatmarket.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "node": "0.10.x || 4.x"
   },
