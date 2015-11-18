@@ -329,6 +329,70 @@ describe('Plugin', function () {
                 .caught(done)
         })
 
+        it('should handle missing shipping address', function (done) {
+            nock(STRIPE_ORIGIN)
+                .post(STRIPE_CHARGE_PATH)
+                .reply(function () {
+                    return [
+                        200,
+                        JSON.stringify({}),
+                    ]
+                })
+            nock(SCHEMA_ORIGIN)
+                .get(SCHEMA_PATHNAME)
+                .reply(200, VALID_SHIPPING_SCHEMA)
+            var options = {
+                payload: JSON.stringify({
+                    email: 'fake@email.com',
+                    sku: '001',
+                    token: 'just_a_fake_token',
+                }),
+            }
+            request.post(URI, options)
+                .spread(function (res) {
+                    expect(res.statusCode).to.equal(400)
+                    return done()
+                })
+                .caught(done)
+        })
+
+        it('should handle unnecessary shipping address', function (done) {
+            nock(STRIPE_ORIGIN)
+                .post(STRIPE_CHARGE_PATH)
+                .reply(function () {
+                    return [
+                        200,
+                        JSON.stringify({}),
+                    ]
+                })
+            nock(SCHEMA_ORIGIN)
+                .get(SCHEMA_PATHNAME)
+                .reply(200, VALID_SCHEMA)
+            var options = {
+                payload: JSON.stringify({
+                    email: 'fake@email.com',
+                    shipping: {
+                        name: 'John Doe',
+                        address: {
+                            city: 'New York',
+                            country: 'United States',
+                            line1: '123 Fake St',
+                            state: 'NY',
+                            postal_code: '10000',
+                        },
+                    },
+                    sku: '001',
+                    token: 'just_a_fake_token',
+                }),
+            }
+            request.post(URI, options)
+                .spread(function (res) {
+                    expect(res.statusCode).to.equal(400)
+                    return done()
+                })
+                .caught(done)
+        })
+
     })
 
     describe('GET', function () {
