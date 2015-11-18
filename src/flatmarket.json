@@ -60,7 +60,9 @@
   },
   "stripe": {
     "allowRememberMe": false,
+    "billingAddress": true,
     "panelLabel": "Buy now {{amount}}",
-    "publishableKey": "pk_test_U3D2c6KZqp7LOiMTzAFBenUe"
+    "publishableKey": "pk_test_U3D2c6KZqp7LOiMTzAFBenUe",
+    "shippingAddress": true
   }
 }
