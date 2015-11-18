@@ -19,7 +19,7 @@
   "dependencies": {
     "bluebird": "^2.9.30",
     "boom": "^2.8.0",
-    "flatmarket-schema": "^1.0.0",
+    "flatmarket-schema": "^1.1.0",
     "joi": "^6.5.0",
     "lodash": "^3.10.0",
     "stripe": "^3.6.0",
