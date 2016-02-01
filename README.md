@@ -2,7 +2,11 @@
 
 [![Build Status](https://circleci.com/gh/christophercliff/flatmarket-theme-bananas.svg?style=shield)](https://circleci.com/gh/christophercliff/flatmarket-theme-bananas)
 
-An official [Flatmarket](https://json.expert/flatmarket/) theme.
+An official [Flatmarket](https://github.com/christophercliff/flatmarket) theme.
+
+## Live Demo
+
+Try a [live demo](https://christophercliff.com/flatmarket/).
 
 ## Installation
 
