@@ -1,10 +1,6 @@
-Made possible By [JSON Expert](https://json.expert/), the easiest way to create a web-ready API.
-
----
-
 # flatmarket-example
 
-An example [Flatmarket](https://json.expert/flatmarket/) website.
+An example [Flatmarket](https://github.com/christophercliff/flatmarket) website.
 
 ## Usage
 
