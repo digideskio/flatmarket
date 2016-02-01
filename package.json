@@ -11,7 +11,7 @@
     "url": "http://github.com/christophercliff/flatmarket-example"
   },
   "dependencies": {
-    "flatmarket": "^2.1.0",
+    "flatmarket": "^2.1.1",
     "flatmarket-theme-bananas": "^1.0.0"
-  },
+  }
 }
