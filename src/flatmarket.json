@@ -1,6 +1,7 @@
 {
   "info": {
-    "name": "Welcome to Flatmarket!"
+    "description": "Flatmarket is a free, open source e-commerce platform for static websites. This is a demo, products are not for sale.",
+    "name": "Welcome to Flatmarket"
   },
   "products": {
     "001": {
@@ -9,7 +10,7 @@
       "images": [
         "images/pineapple.png"
       ],
-      "name": "Pinapple"
+      "name": "Pineapple"
     },
     "002": {
       "amount": 1000,

@@ -6,7 +6,7 @@ Made possible By [JSON Expert](https://json.expert/), the easiest way to create 
 
 An example [Flatmarket](https://json.expert/flatmarket/) website.
 
-## Get Started
+## Usage
 
 Install the dependencies:
 
@@ -18,7 +18,7 @@ Then start the local server in development mode:
 
 ```sh
 $ ./node_modules/.bin/flatmarket \
-    --component ./lib/index.jsx \
+    --component ./node_modules/flatmarket-theme-bananas/index.jsx \
     --stripe-secret-key YOUR_TEST_SECRET_KEY \
     --dev
 ```
