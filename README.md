@@ -1,13 +1,9 @@
-Made possible By [JSON Expert](https://json.expert/), the easiest way to create a web-ready API.
-
----
-
 # hapi-flatmarket
 
 [![Build Status](https://circleci.com/gh/christophercliff/hapi-flatmarket.svg?style=shield)](https://circleci.com/gh/christophercliff/hapi-flatmarket)
 [![codecov.io](http://codecov.io/github/christophercliff/hapi-flatmarket/coverage.svg?branch=master)](http://codecov.io/github/christophercliff/hapi-flatmarket?branch=master)
 
-A [hapi](http://hapijs.com/) plugin for [flatmarket](https://json.expert/flatmarket/).
+A [hapi](http://hapijs.com/) plugin for [Flatmarket](https://github.com/christophercliff/flatmarket).
 
 ## Installation
 
