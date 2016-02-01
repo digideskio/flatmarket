@@ -1,7 +1,7 @@
 {
   "name": "flatmarket-theme-bananas",
   "description": "An official Flatmarket theme.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.jsx",
   "engines": {
     "node": "4.2.x"
