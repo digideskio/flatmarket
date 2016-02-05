@@ -4,7 +4,7 @@ An example [Flatmarket](https://github.com/christophercliff/flatmarket) website.
 
 ## Usage
 
-Install the dependencies:
+Clone this repo and install dependencies:
 
 ```sh
 $ npm install
@@ -19,7 +19,9 @@ $ ./node_modules/.bin/flatmarket \
     --dev
 ```
 
-The website should be running at [https://127.0.0.1:8000/](https://127.0.0.1:8000/).
+The website should be running at [https://127.0.0.1:8000/](https://127.0.0.1:8000/) (note the **`https`**).
+
+See the [API Reference](https://github.com/christophercliff/flatmarket/blob/master/REFERENCE.md) for a complete list of options.
 
 ## Contributing
 

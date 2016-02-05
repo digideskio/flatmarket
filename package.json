@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "flatmarket-example",
   "description": "An example Flatmarket website.",
   "version": "2.1.2",
