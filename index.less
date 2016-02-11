@@ -28,8 +28,10 @@
 }
 
 html { font-size: @ABSOLUTE_FONT_SIZE_1; }
+main { section { flex: 1 0 97%; } }
 @media screen and (min-width: 800px) {
-    html{ font-size: @ABSOLUTE_FONT_SIZE_2; }
+    html { font-size: @ABSOLUTE_FONT_SIZE_2; }
+    main { section { flex: 1 0 368px; } }
 }
 
 .fillRelative() {
@@ -86,10 +88,8 @@ main {
         background: @COLOR_BACKGROUND_SECONDARY;
         box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.15);
         cursor: pointer;
-        flex: 1 1 30%;
         height: 368px;
         margin: 1.5%;
-        min-width: 300px;
         position: relative;
         .price {
             background: @COLOR_HIGHLIGHT_PRIMARY;

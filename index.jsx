@@ -38,6 +38,7 @@ module.exports = React.createClass({
         ])
         return (
             <div className="container">
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <header>
                     <h1>{name}</h1>
                     {!_.isEmpty(description) && <p>{description}</p>}
