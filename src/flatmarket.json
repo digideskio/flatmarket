@@ -18,8 +18,7 @@
       "images": [
         "images/banana.png"
       ],
-      "name": "Banana",
-      "plan": "test_10_trial"
+      "name": "Banana"
     },
     "003": {
       "amount": 1000,
@@ -35,8 +34,7 @@
       "images": [
         "images/cherry.png"
       ],
-      "name": "Cherry",
-      "plan": "test_10_trial"
+      "name": "Cherry"
     },
     "005": {
       "amount": 1000,
@@ -52,8 +50,7 @@
       "images": [
         "images/pomegranate.png"
       ],
-      "name": "Pomegranate",
-      "plan": "test_10_trial"
+      "name": "Pomegranate"
     }
   },
   "server": {
