@@ -1,11 +1,12 @@
 <p align="center">
-  <img alt="Lerna" src="https://raw.githubusercontent.com/christophercliff/flatmarket-example/master/src/images/pineapple.png" />
+  <img alt="Lerna" src="https://raw.githubusercontent.com/christophercliff/flatmarket-example/master/src/images/pineapple.png" width="360" />
 </p>
+
+<h1 style="text-aign:center;">flatmarket</h1>
 
 <p align="center">
     <a href="https://circleci.com/gh/christophercliff/flatmarket"><img src="https://circleci.com/gh/christophercliff/flatmarket.svg?style=shield" /></a>
     <a href="http://codecov.io/github/christophercliff/flatmarket?branch=master"><img src="http://codecov.io/github/christophercliff/flatmarket/coverage.svg?branch=master" /></a>
-    <h1>flatmarket</h1>
 </p>
 
 Flatmarket is a free, open source e-commerce platform for static websites. It is reliable, secure, and inexpensive to operate.
