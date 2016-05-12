@@ -4,13 +4,6 @@
 
 <h1 align="center">flatmarket</h1>
 
-<p align="center">
-    <a href="https://circleci.com/gh/christophercliff/flatmarket"><img src="https://circleci.com/gh/christophercliff/flatmarket.svg?style=shield" /></a>
-    <a href="http://codecov.io/github/christophercliff/flatmarket?branch=master"><img src="http://codecov.io/github/christophercliff/flatmarket/coverage.svg?branch=master" /></a>
-</p>
-
----
-
 Flatmarket is a free, open source e-commerce platform for static websites. It is reliable, secure, and inexpensive to operate.
 
 The platform uses [Stripe](https://stripe.com/) for payment processing and is built on the latest web technologies like [hapi](http://hapijs.com/), [React](http://facebook.github.io/react/), and [Webpack](http://webpack.github.io/).
