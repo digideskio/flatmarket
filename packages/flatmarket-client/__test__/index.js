@@ -1,5 +1,5 @@
 /* global sinon */
-var Client = require('lib/index')
+var Client = require('../lib/index')
 var expect = require('chai').expect
 var url = require('url')
 
@@ -28,28 +28,6 @@ describe('Client', function () {
 
         it('should create the client', function () {
             expect(Client.create({ host: HOST }).uri).to.equal('https://just-a-test-host.com/')
-        })
-
-    })
-
-    describe('getStatus()', function () {
-
-        it('should get the status', function (done) {
-            fakeServer.respondWith('GET', URI, [
-                200,
-                {
-                    'Content-Type': 'application/json',
-                },
-                JSON.stringify({
-                    status: 'ok',
-                }),
-            ])
-            Client.create({ host: HOST }).getStatus()
-                .then(function (payload) {
-                    expect(payload.status).to.equal('ok')
-                    return done()
-                })
-                .caught(done)
         })
 
     })

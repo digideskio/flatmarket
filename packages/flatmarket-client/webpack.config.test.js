@@ -1,11 +1,10 @@
-var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-    context: path.resolve(__dirname, './test/'),
+    context: __dirname,
     devtool: 'eval',
     entry: {
-        index: './index',
+        index: './__test__/index',
     },
     module: {
         loaders: [
@@ -26,7 +25,4 @@ module.exports = {
             },
         }),
     ],
-    resolve: {
-        root: path.resolve(__dirname, './'),
-    },
 }
