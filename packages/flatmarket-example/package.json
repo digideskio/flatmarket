@@ -4,12 +4,12 @@
   "description": "An example Flatmarket website.",
   "version": "2.1.2",
   "engines": {
-    "node": "0.10.x || 4.x"
+    "node": "4.2.x"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/christophercliff/flatmarket-example"
+    "url": "http://github.com/christophercliff/flatmarket"
   },
   "dependencies": {
     "flatmarket": "^2.1.1",
