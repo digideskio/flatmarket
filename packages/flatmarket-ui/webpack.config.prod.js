@@ -1,11 +1,12 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
     context: path.resolve(__dirname, './lib/ui/'),
-    devtool: 'eval',
+    devtool: 'source-map',
     entry: {
-        app: './test/entry.js',
+        app: './entry',
     },
     module: {
         loaders: [
@@ -15,15 +16,15 @@ module.exports = {
             },
             {
                 test: /\.json$/,
-                loader: 'json',
+                loader: 'json-loader',
             },
             {
                 test: /\.jsx$/,
-                loader: 'jsx',
+                loader: 'jsx-loader',
             },
             {
                 test: /\.less$/,
-                loader: 'style!css!less',
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader'),
             },
             {
                 test: /\.woff$/,
@@ -35,16 +36,20 @@ module.exports = {
         dns: 'empty',
         net: 'empty',
     },
+    output: {
+        filename: '[name].js',
+        library: 'app',
+        libraryTarget: 'var',
+    },
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
-                NODE_ENV: JSON.stringify('test'),
+                NODE_ENV: JSON.stringify('production'),
+                PLATFORM: JSON.stringify('browser'),
             },
         }),
+        new ExtractTextPlugin('[name].css', {
+            allChunks: true,
+        }),
     ],
-    resolve: {
-        alias: {
-            __component__: path.resolve(__dirname, './lib/ui/component.js'),
-        },
-    },
 }

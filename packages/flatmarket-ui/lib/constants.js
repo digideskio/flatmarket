@@ -1,0 +1,22 @@
+module.exports = {
+    types: {
+        checkoutBegin: {
+            id: 'checkoutBegin',
+        },
+        checkoutCancel: {
+            id: 'checkoutCancel',
+        },
+        createChargeBegin: {
+            id: 'createChargeBegin',
+        },
+        createChargeFailure: {
+            id: 'createChargeFailure',
+        },
+        createChargeSuccess: {
+            id: 'createChargeSuccess',
+        },
+        reset: {
+            id: 'reset',
+        },
+    },
+}

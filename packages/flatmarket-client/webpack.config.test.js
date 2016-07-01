@@ -7,6 +7,14 @@ module.exports = {
     entry: {
         index: './index',
     },
+    module: {
+        loaders: [
+            {
+                test: /\.json$/,
+                loader: 'json',
+            },
+        ],
+    },
     node: {
         dns: 'empty',
         net: 'empty',

@@ -3,7 +3,7 @@ var Boom = require('boom')
 var BPromise = require('bluebird')
 var flatmarketSchema = require('flatmarket-schema')
 var Joi = require('joi')
-var pkg = require('../package.json')
+// var pkg = require('../package.json')
 var request = require('./request')
 var createStripeClient = require('stripe')
 var util = require('util')
@@ -22,9 +22,10 @@ var optionsSchema = Joi.object().keys({
 
 exports.register = register
 exports.optionsSchema = optionsSchema
+exports.validations = validations
 
 register.attributes = {
-    pkg: pkg,
+    // pkg: pkg,
 }
 
 function register(server, options, next) {

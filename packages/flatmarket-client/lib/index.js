@@ -4,21 +4,14 @@ var BPromise = require('bluebird')
 var Joi = require('joi')
 var reqwest = require('reqwest')
 var url = require('url')
-var validations = require('hapi-flatmarket/lib/validations')
+var flatmarketValidation = require('flatmarket-validation')
 
 var OPTIONS_SCHEMA = Joi.object().keys({
     host: Joi.string().required(),
     pathname: Joi.string().default('/'),
 }).required()
 var PROTOCOL = 'https'
-var METHODS = {
-    get: {
-        id: 'get',
-    },
-    post: {
-        id: 'post',
-    },
-}
+var POST = 'post'
 
 module.exports = Client
 
@@ -43,17 +36,10 @@ _.extend(Client, {
 _.extend(Client.prototype, {
 
     createCharge: function (data) {
-        Joi.assert(data, validations.createCharge)
+        Joi.assert(data, flatmarketValidation.createCharge)
         return request({
             data: data,
-            method: METHODS.post.id,
-            url: this.uri,
-        })
-    },
-
-    getStatus: function () {
-        return request({
-            method: METHODS.get.id,
+            method: POST,
             url: this.uri,
         })
     },

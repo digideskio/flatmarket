@@ -1,6 +1,6 @@
 {
   "name": "flatmarket",
-  "description": "A CLI for Flatmarket.",
+  "description": "The UI engine for Flatmarket",
   "version": "2.1.2",
   "engines": {
     "node": "0.10.x || 4.x"
@@ -9,10 +9,6 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/christophercliff/flatmarket"
-  },
-  "main": "./lib/",
-  "bin": {
-    "flatmarket": "./bin/flatmarket"
   },
   "dependencies": {
     "babel-core": "^6.1.4",
@@ -27,7 +23,6 @@
     "flatmarket-client": "^1.1.0",
     "flatmarket-schema": "^1.1.0",
     "flatmarket-server": "^1.1.0",
-    "flatmarket-ui": "^1.1.0",
     "fs-extra": "^0.22.1",
     "hapi": "^8.8.0",
     "immutable": "^3.7.5",

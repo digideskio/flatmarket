@@ -1,0 +1,18 @@
+{
+  "info": {
+    "name": "test"
+  },
+  "products": {
+    "001": {
+      "amount": 123
+    }
+  },
+  "server": {
+    "host": "foo.com"
+  },
+  "stripe": {
+    "billingAddress": true,
+    "publishableKey": "just_a_fake_key",
+    "shippingAddress": true
+  }
+}
