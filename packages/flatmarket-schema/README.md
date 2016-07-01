@@ -1,8 +1,5 @@
 # flatmarket-schema
 
-[![Build Status](https://circleci.com/gh/christophercliff/flatmarket-schema.svg?style=shield)](https://circleci.com/gh/christophercliff/flatmarket-schema)
-[![codecov.io](http://codecov.io/github/christophercliff/flatmarket-schema/coverage.svg?branch=master)](http://codecov.io/github/christophercliff/flatmarket-schema?branch=master)
-
 A JSON schema utility for [Flatmarket](https://github.com/christophercliff/flatmarket).
 
 ## Installation
@@ -23,7 +20,97 @@ validation.error // the error (`null` if `yourObj` is valid)
 
 ## Specification
 
-See [SPECIFICATION](https://github.com/christophercliff/flatmarket-schema/blob/master/SPECIFICATION.md).
+### Schema
+
+#### Flatmarket Object
+
+This is the root object for the specification.
+
+##### Fixed Fields
+
+Field Name | Type | Description
+---|:---:|---
+info | [Info Object](#info-object) | **Required.**
+products | [Products Object](#products-object) | **Required.**
+server | [Server Object](#server-object) | **Required.**
+stripe | [Stripe Object](#stripe-object) | **Required.**
+
+#### Info Object
+
+Defines additional data about the store.
+
+##### Fixed Fields
+
+Field Name | Type | Description
+---|:---:|---
+name | `String` | **Required.**
+description | `String` |
+
+##### Patterned Objects
+
+Field Pattern | Type | Description
+---|:---:|---
+^x- | Any |
+
+#### Products Object
+
+##### Patterned Fields
+
+Field Pattern | Type | Description
+---|:---:|---
+{id} | [Product Object](#product-object) | **Required.**
+
+#### Product Object
+
+Defines a product. In addition to the subset specified below, can contain the types specified in [Stripe Object](#stripe-object) (these values will override the global Stripe configuration).
+
+##### Fixed Fields
+
+Field Name | Type | Description
+---|:---:|---
+amount | `Number` | **Required.**
+description | `String` |
+images | `[String]` |
+metadata | Any |
+name | `String` |
+plan | `String` |
+
+##### Patterned Fields
+
+Field Pattern | Type | Description
+---|:---:|---
+^x- | Any |
+
+#### Server Object
+
+Defines the Flatmarket server configuration.
+
+##### Fixed Fields
+
+Field Name | Type | Description
+---|:---:|---
+host | `String` | **Required.**
+pathname | `String` |
+
+#### Stripe Object
+
+Defines the global Stripe configuration. Values can be overriden by individual [Product Objects](#product-object).
+
+##### Fixed Fields
+
+Field Name | Type | Description
+---|:---:|---
+allowRememberMe | `Boolean` |
+billingAddress | `Boolean` |
+bitcoin | `Boolean` |
+capture | `Boolean` |
+currency | `String` |
+image | `String` |
+name | `String` |
+panelLabel | `String` |
+publishableKey | `String` | **Required.**
+shippingAddress | `Boolean` | `billingAddress` must be set to `true`.
+zipCode | `Boolean` |
 
 ## Contributing
 

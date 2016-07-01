@@ -12,11 +12,18 @@ dev-ui:
 
 style:
 	make style-client
+	make style-schema
 	make style-theme-bananas
 	make style-ui
 
 style-client:
 	./node_modules/crispy/node_modules/.bin/eslint ./packages/flatmarket-client/ \
+		-c ./node_modules/crispy/.eslintrc \
+		--ext '.js,.jsx' \
+		--ignore-pattern '**/+(coverage|fixtures|node_modules)/**'
+
+style-schema:
+	./node_modules/crispy/node_modules/.bin/eslint ./packages/flatmarket-schema/ \
 		-c ./node_modules/crispy/.eslintrc \
 		--ext '.js,.jsx' \
 		--ignore-pattern '**/+(coverage|fixtures|node_modules)/**'
@@ -35,10 +42,15 @@ style-theme-bananas:
 
 test:
 	make test-client
+	make test-schema
 	make test-ui
 
 test-client:
 	./node_modules/.bin/karma start ./packages/flatmarket-client/karma.config.js
+
+test-schema:
+	./node_modules/.bin/mocha ./packages/flatmarket-schema/__test__/**/* \
+		--reporter spec
 
 test-ui:
 	./node_modules/.bin/karma start ./packages/flatmarket-ui/karma.config.js
