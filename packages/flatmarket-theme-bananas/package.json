@@ -9,15 +9,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/christophercliff/flatmarket-theme-bananas"
-  },
-  "scripts": {
-    "style": "./node_modules/crispy/node_modules/.bin/eslint -c ./node_modules/crispy/.eslintrc --ext '.js,.jsx' ./"
+    "url": "http://github.com/christophercliff/flatmarket"
   },
   "peerDependencies": {
     "flatmarket": "^2.1.0"
-  },
-  "devDependencies": {
-    "crispy": "^5.0.1"
   }
 }
