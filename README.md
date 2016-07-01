@@ -2,7 +2,7 @@
   <img alt="Lerna" src="https://raw.githubusercontent.com/christophercliff/flatmarket-example/master/src/images/pineapple.png" width="360" />
 </p>
 
-<h1 align="center">flatmarket</h1>
+<h1 align="center">Flatmarket</h1>
 
 Flatmarket is a free, open source e-commerce platform for static websites. It is reliable, secure, and inexpensive to operate.
 
@@ -93,22 +93,6 @@ Flatmarket comes with server integrations for the following platforms:
 - [hapi](https://github.com/christophercliff/hapi-flatmarket)
 
 Each platform exposes the REST API endpoint that your static website will use to create charges. The server environment requires access to both your Stripe secret key and the public URI for the schema document.
-
-TODO: Mention the schema URI dependencies.
-
-TODO: Example curl request for creating a test charge.
-
-## Platform
-
-- [flatmarket-client](https://github.com/christophercliff/flatmarket-client) A browser client for a Flatmarket service.
-- [flatmarket-example](https://github.com/christophercliff/flatmarket-example) An example website.
-- [flatmarket-lambda](https://github.com/christophercliff/flatmarket-lambda) A [Lambda](https://aws.amazon.com/lambda/)-ready service.
-- [flatmarket-schema](https://github.com/christophercliff/flatmarket-schema) A schema specification and validator.
-- [flatmarket-server](https://github.com/christophercliff/flatmarket-server) A standalone node.js web server.
-- [flatmarket-service](https://github.com/christophercliff/flatmarket-service) The core service.
-- [flatmarket-server-heroku](https://github.com/christophercliff/flatmarket-server-heroku) A [Heroku](https://www.heroku.com/)-ready service.
-- [hapi-flatmarket](https://github.com/christophercliff/hapi-flatmarket) A hapi plugin for node.js web servers.
-- [hapi-stripe-webhooks](https://github.com/christophercliff/hapi-stripe-webhooks) A hapi plugin for integrating with Stripe webhooks.
 
 ## Themes
 
